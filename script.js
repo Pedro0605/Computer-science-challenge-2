@@ -1,4 +1,4 @@
-document.getElementById("submit").addEventListener("submit", function(e){
+document.getElementById("send").addEventListener("submit", function(e){
     e.preventDefault();
 
     const name = document.getElementById("name").value;
