@@ -1,11 +1,12 @@
-document.getElementById("send").addEventListener("submit", function(e){
-    e.preventDefault();
+document.querySelector("form").addEventListener("submit", function(e){
+    console.log("send");
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    console.log(name, email, password);
 
-    localStorage.setItem("name", name)
-    localStorage.setItem("email", email)
-    localStorage.setItem("password", password)
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
 });
